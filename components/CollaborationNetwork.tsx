@@ -1,7 +1,5 @@
-
 import React from 'react';
-// Added ArrowRight to imports
-import { Users2, Handshake, ShieldCheck, SearchCheck, HeartHandshake, Briefcase, GraduationCap, ArrowRight } from 'lucide-react';
+import { Users, Handshake, ShieldCheck, HeartHandshake, Briefcase, GraduationCap, ArrowRight } from 'lucide-react';
 
 const CollaborationNetwork: React.FC = () => {
   const partnerTypes = [
@@ -15,7 +13,7 @@ const CollaborationNetwork: React.FC = () => {
       title: "Kolaborasi Antar Pendamping",
       role: "Peer Support",
       desc: "Sinergi antar rekan sejawat untuk memastikan standar kualitas kerja di lapangan selaras dengan target pimpinan daerah/pusat.",
-      icon: <Users2 className="text-indigo-600" />
+      icon: <Users className="text-indigo-600" />
     },
     {
       title: "Kemitraan Akademis",
