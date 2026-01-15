@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulo Sinaga, S.E. | Executive Portfolio</title>
     
-    <!-- Open Graph / LinkedIn Metadata -->
+    <!-- Metadata -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pulo.pruidea.com/">
     <meta property="og:title" content="Pulo Sinaga, S.E. - Management Strategist & Institutional Support">
@@ -40,37 +40,16 @@
             .print\:hidden { display: none !important; } 
             .print\:block { display: block !important; }
             * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-            
-            html, body { 
-                background: white !important; 
-                color: black !important; 
-                margin: 0 !important; 
-                padding: 0 !important;
-                height: auto !important;
-                overflow: visible !important;
-                position: relative !important;
-            }
-
+            html, body { background: white !important; color: black !important; margin: 0 !important; padding: 0 !important; height: auto !important; overflow: visible !important; }
             @page { margin: 1cm; size: auto; }
-
-            section { 
-                page-break-inside: avoid; 
-                margin-bottom: 20px !important; 
-                display: block !important; 
-                opacity: 1 !important; 
-                visibility: visible !important; 
-                transform: none !important;
-            }
-
+            section { page-break-inside: avoid; margin-bottom: 20px !important; display: block !important; }
             nav, .fixed, .absolute, button, a[href^="#"] { display: none !important; }
-            
             #root { height: auto !important; overflow: visible !important; display: block !important; }
         }
 
         #root { min-height: 100vh; display: flex; flex-direction: column; }
         
         .reveal { opacity: 1; transform: translateY(0); }
-        
         @media (min-width: 1024px) {
           .reveal {
             opacity: 0;
@@ -83,10 +62,10 @@
 <script type="importmap">
 {
   "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react": "https://esm.sh/react@^19.2.3",
     "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
     "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
     "vite": "https://esm.sh/vite@^7.3.1",
     "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
   }
@@ -95,7 +74,7 @@
 </head>
 <body class="bg-white text-slate-900 antialiased">
     <div id="root"></div>
-    <!-- Entry point tunggal untuk sistem build Vite -->
-    <script type="module" src="/index.tsx"></script>
+    <!-- Gunakan path ./ agar Vite bisa menemukan file di root -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>
