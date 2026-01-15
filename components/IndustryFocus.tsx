@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Landmark, Users2, Building2, Globe2, GraduationCap, Briefcase, ShieldCheck } from 'lucide-react';
+import { Landmark, Users, Building2, Globe2, GraduationCap, Briefcase, ShieldCheck } from 'lucide-react';
 
 const IndustryFocus: React.FC = () => {
   const industries = [
